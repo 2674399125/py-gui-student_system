@@ -1,0 +1,22 @@
+python学生成绩管理系统教师版运行说明
+
+1，准备安装好软件PyCharm Navict mysql8.0/mysql5.5 python3.7 (已安装可忽视）
+2，创建数据库打开Navict，输入密码连接Mysql数据库，创建数据库school，
+3，修改数据库密码：StudentScoreManagerSystem.py文件，15行的eq10324改为自己的数据库密码
+4，PyCharm配置参数：系统解释器配置python3.7，工作目录为程序的父文件夹。
+5，python3.7的安装：默认安装路径，在安装pip install pymysql 库
+6，运行程序：运行StudentScoreManagerSystem.py文件即可进入主界面。
+
+
+运行问题：数据库连接错误
+打开注释：self.db = pymysql.connect("localhost", "root", "eq10324", "school")
+
+依赖版本
+PyMySQL==1.0.2
+xlrd==1.2.0
+xlwt
+
+
+使用说明
+    自己注册账号
+    学生成绩的增删改查
